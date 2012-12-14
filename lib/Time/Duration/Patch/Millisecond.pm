@@ -99,7 +99,8 @@ sub patch_data {
 
 =head1 SYNOPSIS
 
- # patch first before importing! otherwise you'll get unpatched version
+ # patch first before importing! otherwise you'll get unpatched version of
+ # concise(), interval(), and other routines.
  use Time::Duration::Patch::Millisecond;
 
  use Time::Duration;
