@@ -93,7 +93,7 @@ sub patch_data {
 }
 
 1;
-# ABSTRACT: Make Time::Duration support millisecond
+# ABSTRACT: Make Time::Duration support milliseconds
 
 =for Pod::Coverage .+
 
@@ -110,14 +110,12 @@ sub patch_data {
 
 =head1 DESCRIPTION
 
-This module contains patch for L<Time::Duration> to support millisecond. I am
-also in the process of asking Time::Duration's whether he/she wants to merge
-this into Time::Duration. See Time::Duration's RT queue [1].
+This module contains patch for L<Time::Duration> to support milliseconds. I am
+also in the process of asking Time::Duration's maintainer whether he/she wants
+to merge this into Time::Duration. See RT#81960.
 
-Locale modules might want to translate 'millisecond(s)' and provide its concise
-version as well.
-
-[1] https://rt.cpan.org/Dist/Display.html?Status=Active&Queue=Time-Duration
+Locale modules like L<Time::Duration::id> or L<Time::Duration::fr> might want to
+translate 'millisecond(s)' and provide its concise version as well.
 
 
 =head1 SEE ALSO
