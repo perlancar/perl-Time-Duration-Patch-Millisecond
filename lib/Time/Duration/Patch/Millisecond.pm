@@ -93,7 +93,7 @@ sub patch_data {
 }
 
 1;
-# ABSTRACT: Make Time::Duration support milliseconds
+# ABSTRACT: (DEPRECATED) Make Time::Duration support milliseconds
 
 =for Pod::Coverage .+
 
@@ -113,7 +113,9 @@ sub patch_data {
 
 This module contains patch for L<Time::Duration> to support milliseconds. I am
 also in the process of asking Time::Duration's maintainer whether he/she wants
-to merge this into Time::Duration. See RT#81960.
+to merge this into Time::Duration. See RT#81960. B<UPDATE 2013-04-17:>
+Time::Duration 1.1 is now released which contains millisecond support. Therefore
+this patch is now declared deprecated.
 
 Locale modules like L<Time::Duration::id> or L<Time::Duration::fr> might want to
 translate 'millisecond(s)' and provide its concise version as well.
